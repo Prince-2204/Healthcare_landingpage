@@ -1,0 +1,327 @@
+*{
+    scroll-behavior: smooth;
+}
+
+/* ****************************Css of Strip******************************* */
+.strip{
+    display: flex;
+    /* border: 2px solid red; */
+    height: 6vh;
+    width: 100%;
+    background: #160f41;
+    /* justify-content: flex-end; */
+    padding-left: 1050px;
+}
+
+/* css of strip button */
+.button-common a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.button-common a:hover {
+    /* background-color: #555; Optional: Add a hover effect */
+    color: gray;
+}
+
+/* *********************************css of header*********************************************** */
+
+.header{
+    display: flex;
+    /* border: 2px solid black; */
+    height: 7vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgb(98, 47, 180);
+    /* justify-content: center; */
+    padding-right: 350px;
+    padding-left: 400px;
+
+}
+
+.header-button{
+   
+
+}
+
+.header-button a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.header-button a:hover, .demo-button a:hover {
+    border-bottom: 2px solid white; /* White underline on hover */
+    color: rgb(243, 235, 235);
+}
+
+.demo-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 150px;
+    height: 60%;
+    margin-left: 250px;
+    margin-top: 7px;
+    background: #FFFFFF;
+}
+
+.demo-button a{
+
+    text-decoration: none;
+    color: rgb(98, 47, 180);
+    text-align: center;
+    display: inline-block;
+    font-weight: 600;
+    
+}
+/* css of first page */
+
+.first-page{
+    display: flex;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 80vh;
+    background: #622FB4;
+    background-position: Center;
+    flex-direction: rows;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+}
+
+.first-text-1{
+    color: #F3A61C;
+}
+
+.first-text-2{
+    color: white;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.first-text-3{
+    display: flex;
+    /* border: 2px solid white; */
+    border-radius: 14px;
+    color: #622fb4;
+    padding: 10px 24px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.first-text-3 a{
+    text-decoration: none;
+    color: #622fb4;
+    font-weight: 600;
+}
+/* css of second page */
+.second-page{
+    display: flex;
+    /* border: 2px solid green; */
+    flex-direction: column;
+    width: 100%;
+    height: 105vh;
+
+}
+
+.second-text{
+    margin-top: 100px;
+}
+
+
+.sXOQW{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    
+    box-sizing: border-box;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: var(--redesign-heading-purple);
+    font-size: 48px !important;
+    line-height: 60px !important;
+    font-family: var(--ptserif-ff) !important;
+    font-weight: 400 !important;
+    text-align: center;
+    margin: 34px auto 48px;
+    max-width: 793px;
+}
+
+.slider-container {
+
+    position: relative;
+    overflow: hidden; /* Hide overflow to keep slider within bounds */
+    width: 100%; /* Adjust width as needed */
+    margin-top: 140px;
+    padding-left: 5px;
+}
+.slider {
+    display: flex; /* Align boxes horizontally */
+    transition: transform 0.3s ease-in-out; /* Smooth sliding effect */
+}
+.slider-box {
+    width: 350px; /* Fixed width for square boxes */
+    height: 200px; /* Fixed height for square boxes */
+    background-color: #622FB4; /* Example background color */
+    color: white; /* Text color */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; Center text */
+    flex-direction: column;
+    font-size: 20px; /* Adjust text size as needed */
+    margin-right: 10px; /* Space between boxes */
+}
+
+
+
+.slider-box p{
+    
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.slider-box-a{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 70px;
+    margin-left: -60px;
+}
+
+.special{
+    margin-left: -145px;
+}
+.slider-box a{
+   
+    text-decoration: none;
+    color: white;
+   
+}
+.slider-navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.nav-button {
+    background-color: #333; /* Background color for navigation buttons */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.nav-button:hover {
+    background-color: #555; /* Darker color on hover */
+}
+
+.slider-line{
+   
+    width: 100%;
+    border: 0.5px solid white;
+}
+/* css of third page */
+
+.third-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 20px;
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid red; */
+
+}
+
+.third-text{
+    margin-top: 350px;
+    margin-left: 150px;
+    width: 30%;
+    height: 50%;
+    /* border: 2px solid black; */
+}
+
+.third-image{
+    /* border: 2px solid blue; */
+    margin-top: 150px;
+    width: 748px;
+    height: 515px;
+}
+
+.third-textbox-1{
+    font-size: 26px;
+    top: 50%;
+    left: 50%;
+    color:#622FB4;
+    text-align: center;
+    font-weight: 600;
+}
+
+.third-textbox-2{
+    font-size: 20px;
+    margin-top: 20px;
+    color:black;
+    text-align: center;
+}
+/* css of fourth page */
+
+.fourth-page{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    /* border: 2px solid green; */
+    /* background: #310f68; */
+}
+
+
+.fourth-page {
+    /* Ensure the page has some height */
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align the footer to the bottom */
+}
+
+.footer {
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* White text for contrast */
+    padding: 20px 0; /* Padding for spacing */
+    text-align: center; /* Center-align text */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Add some padding for small screens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav {
+    margin-top: 10px;
+}
+
+.footer-nav a {
+    color: white; /* White text for links */
+    margin: 0 10px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

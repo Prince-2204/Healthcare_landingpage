@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Healthcare</title>
+    <link rel="icon" type="image/png" href="Images/title.png">
+</head>
+<body>
+    <div class="strip">
+        <div class="button-1 button-common">
+            <a href="#">Patient Login</a>
+        </div>
+        <div class="button-2 button-common">
+            <a href="#">Doctor Login</a>
+        </div>
+    </div>
+    <div class="header">
+        <div class="header-button-1 header-button">
+            <a href="#">Solutions</a>
+        </div>
+        <div class="header-button-2 header-button">
+            <a href="#">Who We Serve</a>
+        </div>
+        <div class="header-button-3 header-button">
+            <a href="#">Resources</a>
+        </div>
+        <div class="header-button-4 header-button">
+            <a href="#">Company</a>
+        </div>
+        <div class="demo-button">
+            <a href="#">Request a Demo</a>
+        </div>
+    </div>
+    <div class="first-page">
+        
+        <div class="first-textBox">
+            <div class="first-text-1 first-text-common">
+                <span>CLOUD-BASED HEALTHCARE SOFTWARE & SERVICES</span>
+            </div>
+            <div class="first-text-2 first-text-common">
+                <h1>Healthcare<br>solutions that<br>simplify the<br>practice of care</h1>
+            </div>
+            <div class="first-text-3 first-text-common">
+                <a href="#">Let's connect</a>
+            </div>
+        </div>
+
+        <div class="doctor-image">
+            <img src="Images/doctor-removebg-preview.png" alt="" width="350px" height="560px">
+        </div>
+        
+    </div>
+    <div class="second-page">
+        <!-- <div class="second-space">
+            <hr class="divider">
+        </div> -->
+        <div class="second-text">
+            <p class="sXOQW">athenaOne®<strong> </strong>combines software and services that <em>ease clinical complexity</em> and improve <em>overall performance.</em></p>
+        </div>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slider-box">
+                    <p>Electronic Health Records</p>
+                    <hr class="slider-line">
+                    <div class="slider-box-a special">
+                        <a href="#">Learn about EHR</a>
+
+
+                    </div>
+                </div>
+                <div class="slider-box">
+                    <p>Revenue Cycle Services</p>
+                    <hr class="slider-line">
+                    <div class="slider-box-a">
+                        <a href="#">Learn about RCM services</a>
+
+
+                    </div>
+                </div>
+                <div class="slider-box">
+                    <p>Patient Services</p>
+                    <hr class="slider-line">
+                    <div class="slider-box-a">
+                        <a href="#">Learn about Patient services</a>
+
+
+                    </div>
+                </div>
+                <div class="slider-box">
+                    <p>Telehealth Services</p>
+                    <hr class="slider-line">
+                    <div class="slider-box-a">
+                        <a href="#">Learn about Telehealth</a>
+
+                    </div>
+                </div>
+                <div class="slider-box">
+                    <p>Mobile Services</p>
+                    <hr class="slider-line">
+                    <div class="slider-box-a">
+
+                        <a href="#">Learn about our Mobile app</a>
+
+
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="slider-navigation">
+                <button class="nav-button" id="prev">Prev</button>
+                <button class="nav-button" id="next">Next</button>
+            </div>
+        </div>
+    </div>
+    <div class="third-page">
+        <div class="third-text">
+            <div class="third-textbox-1">Enable physician<br>efficiency</div>
+            <div class="third-textbox-2">Reduce documentation time and<br>distractions with robust record<br>sharing and workflow support<br>before and during encounters.</div>
+        </div>
+        <div class="third-image">
+            <img src="Images/Benefit_ClinicalEfficiency.jpg" alt="" width="748" height="515">
+        </div>
+    </div>
+    <div class="fourth-page">
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+                <nav class="footer-nav">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    
+
+    <script>
+        const slider = document.querySelector('.slider');
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+        const sliderItems = document.querySelectorAll('.slider-box');
+        let index = 0;
+
+        function updateSlider() {
+            const offset = -index * (sliderItems[0].offsetWidth + 10); // Move the slider left by the width of one box plus margin
+            slider.style.transform = `translateX(${offset}px)`;
+        }
+
+        prevButton.addEventListener('click', () => {
+            if (index > 0) {
+                index--;
+                updateSlider();
+            }
+        });
+
+        nextButton.addEventListener('click', () => {
+            if (index < sliderItems.length - 1) {
+                index++;
+                updateSlider();
+            }
+        });
+
+        // Optional: Add touch support for swiping
+        let startX;
+        slider.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+
+        slider.addEventListener('touchend', (e) => {
+            const endX = e.changedTouches[0].clientX;
+            if (startX > endX) {
+                nextButton.click();
+            } else {
+                prevButton.click();
+            }
+        });
+    </script>
+    
+</body>
+</html>
